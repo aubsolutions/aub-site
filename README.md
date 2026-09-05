@@ -1,6 +1,6 @@
 # AUB Solutions
 
-Статический сайт-портфолио AUB Solutions. Не требует сборки.
+Статический сайт-портфолио AUB Solutions. Публикуемые файлы находятся в `public/`; это предотвращает попадание служебных зависимостей в Cloudflare Worker.
 
 ## Локальный запуск
 
@@ -15,7 +15,7 @@ npm run start
 3. Выберите репозиторий. Для статического сайта укажите:
    - Framework preset: `None`
    - Build command: оставьте пустым
-   - Build output directory: `.`
+   - Build output directory: `public`
 4. После первого deploy откройте **Custom domains** и добавьте `aub-solutions.asia` и, при необходимости, `www.aub-solutions.asia`.
 
 ## Скриншоты проектов

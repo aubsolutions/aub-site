@@ -4,7 +4,7 @@
   "private": true,
   "description": "AUB Solutions portfolio website",
   "scripts": {
-    "start": "npx serve .",
+    "start": "npx serve public",
     "check": "node --check script.js"
   }
 }
