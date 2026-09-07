@@ -1,6 +1,6 @@
 # AUB Solutions
 
-Статический сайт-портфолио AUB Solutions. Публикуемые файлы находятся в `public/`; это предотвращает попадание служебных зависимостей в Cloudflare Worker.
+Сайт-портфолио AUB Solutions. Публичные файлы находятся в `public/`, а `worker.js` обрабатывает заявки с контактной формы.
 
 ## Локальный запуск
 
@@ -8,15 +8,11 @@
 npm run start
 ```
 
-## Cloudflare Pages
+## Cloudflare Workers
 
-1. Отправьте файлы этого проекта в репозиторий `https://github.com/aubsolutions/aub-site.git`.
-2. В Cloudflare откройте **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
-3. Выберите репозиторий. Для статического сайта укажите:
-   - Framework preset: `None`
-   - Build command: оставьте пустым
-   - Build output directory: `public`
-4. После первого deploy откройте **Custom domains** и добавьте `aub-solutions.asia` и, при необходимости, `www.aub-solutions.asia`.
+Проект разворачивается командой `npx wrangler deploy`. Статические файлы публикуются из `public/`, настройки находятся в `wrangler.jsonc`.
+
+Для прямой отправки заявок нужно подключить домен `aub-solutions.asia` в Cloudflare Email Service, подтвердить адрес назначения `u.assylbekov@gmail.com` и добавить к Worker email binding `CONTACT_EMAIL` с этим адресом назначения.
 
 ## Скриншоты проектов
 
