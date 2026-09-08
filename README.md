@@ -1,6 +1,6 @@
 # AUB Solutions
 
-Сайт-портфолио AUB Solutions. Публичные файлы находятся в `public/`, а `worker.js` обрабатывает заявки с контактной формы.
+Сайт-портфолио AUB Solutions. Публичные файлы находятся в `public/`. Контактная форма отправляет заявки через Web3Forms.
 
 ## Локальный запуск
 
@@ -12,7 +12,7 @@ npm run start
 
 Проект разворачивается командой `npx wrangler deploy`. Статические файлы публикуются из `public/`, настройки находятся в `wrangler.jsonc`.
 
-Для прямой отправки заявок нужно подключить домен `aub-solutions.asia` в Cloudflare Email Service, подтвердить адрес назначения `u.assylbekov@gmail.com` и добавить к Worker email binding `CONTACT_EMAIL` с этим адресом назначения.
+Форма Web3Forms настроена для домена `aub-solutions.asia`; уведомления приходят на `u.assylbekov@gmail.com`.
 
 ## Скриншоты проектов
 

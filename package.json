@@ -5,6 +5,6 @@
   "description": "AUB Solutions portfolio website",
   "scripts": {
     "start": "npx serve public",
-    "check": "node --check public/script.js && node --check worker.js"
+    "check": "node --check public/script.js"
   }
 }

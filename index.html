@@ -100,10 +100,11 @@
       <p class="overline">ОБРАТНАЯ СВЯЗЬ</p>
       <h2 id="contact-dialog-title">Расскажите о вашем проекте</h2>
       <p class="form-intro">Заполните поля — заявка будет отправлена нашей команде.</p>
-      <label><span>Ваше имя</span><input name="name" autocomplete="name" required></label>
-      <label><span>Телефон или email</span><input name="contact" autocomplete="email" required></label>
-      <label><span>Кратко о задаче</span><textarea name="message" rows="4" required></textarea></label>
+      <label class="field-label"><span>Ваше имя</span><input name="name" autocomplete="name" required></label>
+      <label class="field-label"><span>Телефон или email</span><input name="contact" autocomplete="email" required></label>
+      <label class="field-label"><span>Кратко о задаче</span><textarea name="message" rows="4" required></textarea></label>
       <label class="bot-field" aria-hidden="true"><span>Сайт</span><input name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="consent-field"><input type="checkbox" name="consent" required><span>Согласен на обработку указанных данных для ответа на обращение.</span></label>
       <button class="button form-submit" type="submit">Отправить заявку <b>→</b></button>
       <p class="form-status" aria-live="polite"></p>
     </form>
